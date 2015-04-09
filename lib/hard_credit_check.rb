@@ -1,3 +1,4 @@
+# ODD number of digits 
 account_id = 79927398714
 
 chared = account_id.to_s.chars
