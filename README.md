@@ -1,4 +1,4 @@
-Credit Check
+#Credit Check
 
 Let's write a program that can detect mistakes in a credit card number.
 
@@ -8,7 +8,7 @@ The Luhn algorithm is a check-summing algorithm best known for checking the vali
 
 You can checkout the full description on Wikipedia: http://en.wikipedia.org/wiki/Luhn_algorithm
 
-Description
+#Description
 
 (adapted from Wikipedia)
 
@@ -16,9 +16,9 @@ The formula verifies a number against its included check digit, which is usually
 
 from the rightmost digit, which is the check digit, moving left, double the value of every second digit, if product of this doubling operation is greater than 9 (e.g., 7 * 2 = 14), then sum the digits of the products (e.g., 10: 1 + 0 = 1, 14: 1 + 4 = 5). Take the sum of all the digits, if and only if the total modulo 10 is equal to 0 then the number is valid
 
-Example
+##Example
 
-Calculating the Check Digit
+#Calculating the Check Digit
 
 You don't need to calculate the check digit for this assignment, but the explanation may help you understand the algorithm.
 
@@ -54,7 +54,7 @@ Results summed:        7   9   9   4   7   6   9   7   7   2   3 = 70
 
 Since the summed results modulo 10 is zero, the account number is valid according to the algorithm.
 
-Assignment
+#Assignment
 
 Write a program that implements the Luhn algorithm to validate a credit card number.
 
@@ -64,15 +64,15 @@ card_number = "4929735477250543"
 
 valid = false
 
-# Your Luhn Algorithm Here
+### Your Luhn Algorithm Here
 
-# Output
+### Output
 
-## If it is valid, print "The number is valid!"
+### If it is valid, print "The number is valid!"
 
-## If it is invalid, print "The number is invalid!"
+### If it is invalid, print "The number is invalid!"
 
-Hints
+#Hints
 
 You don't need any kind of loops, iteration, or arrays
 
@@ -92,6 +92,6 @@ Valid: 5541808923795240, 4024007136512380, 6011797668867828
 
 Invalid: 5541801923795240, 4024007106512380, 6011797668868728
 
-Extensions
+#Extensions
 
 Can you make it work for American Express numbers? 342804633855673 is valid but 342801633855673 is invalid.
