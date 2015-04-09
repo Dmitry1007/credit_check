@@ -31,6 +31,7 @@ u = multiplied[9]
 v = multiplied[10]
 
 result = []
+
 if l.size > 1
   result << l.to_i-9
 else
