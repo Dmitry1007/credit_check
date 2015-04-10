@@ -1,4 +1,3 @@
-# AMEX 11 digit, VISA 16 digits 
 # account_id = 79927398713     #Valid
 account_id   = 342804633855673 #Valid
 # account_id = 342801633855673 #Not Valid
