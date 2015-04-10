@@ -1,18 +1,18 @@
 # require 'minitest'
 require 'minitest/autorun'
 require 'minitest/emoji'
-require '../lib/soft_credit_check'
+require './lib/softest_credit_check'
 
 class CreditCheckTest < Minitest::Test
 
-# AMEX 11 digit 
-# account_id = 79927398713   #Valid
-# account_id = 342804633855673 #Valid
-# account_id = 342801633855673 #Not Valid
+  def test_it_can_check_valid_and_invalid_15_digit_AMEX_numbers
+    assert_equal "VALID", CreditCheck.new(342804633855673).prints_result
+    assert_equal "NOT VALID", CreditCheck.new(342801633855673).prints_result
+  end
 
-# VISA 16 digits
-# account_id = 5541808923795240 #Valid
-# account_id = 4024007106512380 #Not Valid
-  
+  def test_it_can_check_valid_and_invalid_16_digit_VISA_numbers
+    assert_equal "VALID", CreditCheck.new(5541808923795240).prints_result
+    assert_equal "NOT VALID", CreditCheck.new(4024007106512380).prints_result
+  end
 
 end

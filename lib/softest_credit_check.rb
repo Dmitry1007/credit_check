@@ -23,10 +23,6 @@ class CreditCheck
   end
 
   def prints_result   
-    puts valid? ? "VALID" : "NOT VALID"
+    valid? ? "VALID" : "NOT VALID"
   end
 end
-
-CreditCheck.new(4024007106512380).prints_result #Not Valid
-CreditCheck.new(5541808923795240).prints_result #Valid
-CreditCheck.new(342804633855673).prints_result #Valid
