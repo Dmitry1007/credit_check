@@ -1,4 +1,4 @@
-# ODD number of digits 
+# ODD number of digits for any AMEX
 account_id = 79927398714
 
 chared = account_id.to_s.chars
